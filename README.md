@@ -9,8 +9,7 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+- [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -28,25 +27,23 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](./screenshot.jpg)
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [form-interativo-cadastro](https://form-interativo-cadastro.vercel.app/)
 
 ## My process
 
-### Built with
+- [80%] Desktop-design
+- [ ] Active-states
+- [ ] Complete-state desktop
+- [ ] Mobile-design
+- [ ] Complete-state mobile
+- [ ] Interactive
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-
-
-### What I learned
+## What I learned
 
 
 ## Author

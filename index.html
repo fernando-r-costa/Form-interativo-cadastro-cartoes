@@ -1,51 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Formulário Interativo Cadastro</title>
+  
 </head>
+
 <body>
+  <div class="card">
+    <div class="card-front">
+      <input type="image" id="img-card-front" src="./images/bg-card-front.png">
+      <input type="image" id="img-card-logo" src="./images/card-logo.svg">
+      <p id="num-card-front">0000 0000 0000 0000</p>
+      <p id="name-card-front">Jane Appleseed</p>
+      <p id="exp-card-front">00/00</p>  
+    </div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <div class="card-back">
+      <input type="image" id="img-card-back" src="./images/bg-card-back.png">
+      <p id="cvv-card-back">000</p>  
+    </div>
+  </div>
 
-  000
+  <fieldset>
+    <form>
+      <label>Nome do Titular</label><input type="text" placeholder="Jane Appleseed">
+      <label>Número do cartão</label><input type="text" placeholder="1234 5678 9123 0000">
+      <label>Data Exp. (mm/aa)</label><input type="text" placeholder="MM"><input type="text" placeholder="AA"><label>CVV</label><input type="text" placeholder="123">
+      <input type="submit" value="Confirmar">
+  
+    </form>
 
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+  </fieldset>
 
   <!-- Completed state start -->
-
+<div hidden>
   Thank you!
   We've added your card details
   Continue
+
+</div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
+<footer>
+  <div class="attribution" hidden>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/fernando-r-costa/">Fernando R Costa</a>.
+  </div>
+  
+</footer>
+
 </html>
