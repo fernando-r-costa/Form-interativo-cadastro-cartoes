@@ -1,4 +1,6 @@
 body {
+    width:  1440px;
+    border: solid;
     background-color: white;
     background-image: url(./images/bg-main-desktop.png);
     background-repeat: no-repeat;
@@ -8,20 +10,20 @@ body {
 
 #img-card-front {
     position: absolute;
-    top: 170px;
-    left: 170px
+    top: 13em;
+    left: 13em;
 }
 
 #img-card-logo {
     position: absolute;
-    top: 200px;
-    left: 200px
+    top: 15em;
+    left: 15.5em;
 }
 
 #num-card-front {
     position:absolute ;
-    top: 310px;
-    left: 200px;
+    top: 10.3em;
+    left: 6.7em;
     font-size: 30px;
     color: white;
     letter-spacing: 2.5px;
@@ -31,8 +33,8 @@ body {
 #name-card-front {
     text-transform: uppercase;
     position:absolute ;
-    top: 370px;
-    left: 200px;
+    top: 23.5em;
+    left: 12.5em;
     font-size: 16px;
     color: white;
     letter-spacing: 3px;
@@ -41,8 +43,8 @@ body {
 
 #exp-card-front {
     position:absolute ;
-    top: 370px;
-    left: 530px;
+    top: 23.5em;
+    left: 33em;
     font-size: 16px;
     color: white;
     letter-spacing: 3px;
@@ -51,14 +53,14 @@ body {
 
 #img-card-back {
     position: absolute;
-    top: 455px;
-    left: 260px
+    top: 34em;
+    left: 20em;
 }
 
 #cvv-card-back {
     position:absolute ;
-    top: 567px;
-    left: 610px;
+    top: 35.5em;
+    left: 38.5em;
     font-size: 16px;
     color: white;
     letter-spacing: 3px;
@@ -67,15 +69,16 @@ body {
 
 form {
     display: block;
+    width: 25em;
     position:absolute ;
-    top: 250px;
-    left: 850px;
+    top: 14em;
+    left: 47em;
 }
 
 form label {
     display: block;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     letter-spacing: 3px;
     color: hsl(278, 68%, 11%);
@@ -85,9 +88,36 @@ form label {
 
 form input {
     display: inline-block;
-	margin: 0 0 20px 10px;
-	padding: 10px 25px;
+	margin: 5px 5px 20px 10px;
+	padding: 10px 10px;
     border-radius: 8px;
+    border: 2px;
     border-style:solid;
     border-color: hsl(270, 3%, 87%);
+}
+
+form input::placeholder {
+    color: hsl(270, 3%, 87%);
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#input-name, #input-num {
+    width: 25em;
+}
+
+#label-menor, #input-mm, #input-aa, #input-cvv {
+    display: inline;
+}
+
+#input-mm, #input-aa, #input-cvv {
+    width: 5em;
+}
+
+#input-cvv {
+    width: 10em;
+}
+
+.menor{
+    display:flex
 }

@@ -10,7 +10,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 
@@ -36,10 +36,13 @@
 
   <fieldset>
     <form>
-      <label>Nome do Titular</label><input type="text" placeholder="Jane Appleseed">
-      <label>Número do cartão</label><input type="text" placeholder="1234 5678 9123 0000">
-      <label>Data Exp. (mm/aa)</label><input type="text" placeholder="MM"><input type="text" placeholder="AA"><label>CVV</label><input type="text" placeholder="123">
-      <input type="submit" value="Confirmar">
+      <label>Nome do Titular</label><input type="text" id="input-name" placeholder="Jane Appleseed">
+      <label>Número do cartão</label><input type="text" id="input-num" placeholder="1234 5678 9123 0000">
+      <div class="menor">
+        <label for="input-mm" id="label-menor">Data Exp. (mm/aa)</label><input type="text" id="input-mm" placeholder="MM"><input type="text" id="input-aa" placeholder="AA">
+        <label for="input-cvv" id="label-menor">CVV</label><input type="text" id="input-cvv" placeholder="123">
+        <input type="submit" value="Confirmar">
+      </div>
   
     </form>
 
