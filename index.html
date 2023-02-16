@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <fieldset>
+  <fieldset id="form" >
     <form>
       <label>Nome do Titular</label><input type="text" id="input-name" placeholder="Jane Appleseed">
       <label>Número do cartão</label><input type="text" id="input-num" placeholder="1234 5678 9123 0000">
@@ -48,21 +48,24 @@
         <input type="text" id="input-cvv" placeholder="123">
       </div>
       <div class="submit">
-        <input type="submit" id="confirmar" value="Confirmar">
-      </div>
-  
+        <input type="submit" id="confirm" value="Confirmar">
+      </div>  
     </form>
-
   </fieldset>
 
-  <!-- Completed state start -->
-<div hidden>
-  Thank you!
-  We've added your card details
-  Continue
-
-</div>
-  
+  <fieldset id="complete">
+    <div class="image-complete">
+      <input type="image" id="image-complete" src="./images/icon-complete.svg">
+    </div>
+    <div class="thankyou">
+      <h1>Obrigado!</h1>
+      <p>O cartão foi adicionado</p>
+    </div>
+    <div class="submit">
+      <input type="submit" id="continue" value="Continuar">
+    </div>      
+  </fieldset>
+    
 </body>
 
 <footer>

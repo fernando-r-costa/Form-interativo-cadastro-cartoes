@@ -38,7 +38,7 @@ Users should be able to:
 
 - [x] Desktop-design
 - [50%] Active-states
-- [ ] Complete-state desktop
+- [x] Complete-state desktop
 - [ ] Mobile-design
 - [ ] Complete-state mobile
 - [ ] Interactive

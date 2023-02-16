@@ -64,6 +64,7 @@ body {
 }
 
 form {
+    content-visibility: visible;
     display: block;
     width: 25em;
     position:absolute ;
@@ -133,9 +134,11 @@ form input::placeholder {
     width: 130px;
 }
 
-#confirmar {
+#confirm, #continue {
     background-color: hsl(278, 68%, 11%);
     color: white;
+    border-radius: 8px;
+    border: 2px;
     border: none;
     margin: 20px 10px;
     padding: 18px 137px;
@@ -144,3 +147,30 @@ form input::placeholder {
 }
 
 /* active-states */
+
+/* complete-states */
+#complete {
+    content-visibility: hidden;
+    display: block;
+    width: 25em;
+    position:absolute ;
+    top: 14em;
+    left: 47em;
+}
+
+#image-complete {
+    margin: 30px 0 0 145px;
+}
+
+.thankyou h1 {
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 40px 115px 15px;
+}
+
+.thankyou p {
+    font-size: 20px;
+    padding: 20px 75px 28px;
+    color: hsl(279, 6%, 55%);
+}
