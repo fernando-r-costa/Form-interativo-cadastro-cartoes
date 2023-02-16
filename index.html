@@ -39,9 +39,16 @@
       <label>Nome do Titular</label><input type="text" id="input-name" placeholder="Jane Appleseed">
       <label>Número do cartão</label><input type="text" id="input-num" placeholder="1234 5678 9123 0000">
       <div class="menor">
-        <label for="input-mm" id="label-menor">Data Exp. (mm/aa)</label><input type="text" id="input-mm" placeholder="MM"><input type="text" id="input-aa" placeholder="AA">
-        <label for="input-cvv" id="label-menor">CVV</label><input type="text" id="input-cvv" placeholder="123">
-        <input type="submit" value="Confirmar">
+        <label for="input-mm" class="label-menor" id="label-exp">Data Exp. (mm/aa)</label>
+        <label for="input-cvv" class="label-menor" id="label-cvv">CVV</label>
+      </div>
+      <div class="input">
+        <input type="text" id="input-mm" placeholder="MM">
+        <input type="text" id="input-aa" placeholder="AA">
+        <input type="text" id="input-cvv" placeholder="123">
+      </div>
+      <div class="submit">
+        <input type="submit" id="confirmar" value="Confirmar">
       </div>
   
     </form>

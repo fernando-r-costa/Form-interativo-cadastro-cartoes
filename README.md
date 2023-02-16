@@ -36,7 +36,7 @@ Users should be able to:
 
 ## My process
 
-- [90%] Desktop-design
+- [x] Desktop-design
 - [ ] Active-states
 - [ ] Complete-state desktop
 - [ ] Mobile-design

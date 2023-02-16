@@ -1,6 +1,6 @@
+/* Desktop-desing */
 body {
     width:  1440px;
-    border: solid;
     background-color: white;
     background-image: url(./images/bg-main-desktop.png);
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ form {
 form label {
     display: block;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 3px;
     color: hsl(278, 68%, 11%);
@@ -88,8 +88,8 @@ form label {
 
 form input {
     display: inline-block;
-	margin: 5px 5px 20px 10px;
-	padding: 10px 10px;
+	margin: 0 5px 15px 10px;
+	padding: 12px 0 12px 15px;
     border-radius: 8px;
     border: 2px;
     border-style:solid;
@@ -99,25 +99,50 @@ form input {
 form input::placeholder {
     color: hsl(270, 3%, 87%);
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #input-name, #input-num {
-    width: 25em;
+    width: 24.9em;
 }
 
-#label-menor, #input-mm, #input-aa, #input-cvv {
-    display: inline;
+.label-menor {
+    display: inline-block;
 }
 
-#input-mm, #input-aa, #input-cvv {
+#label-cvv {
+    margin-left: 20px;
+}
+
+.input {
+    display: inline-block;
+}
+
+#input-mm, #input-aa {
     width: 5em;
 }
 
-#input-cvv {
-    width: 10em;
+#input-mm {
+    margin-right: 0.4em;
 }
 
-.menor{
-    display:flex
+#input-aa {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+#input-cvv {
+    width: 130px;
+}
+
+#confirmar {
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    margin: 20px 10px;
+    padding: 18px 146px 18px 146px;
+    letter-spacing: 1px;
+    font-size: 16px;
+
 }
