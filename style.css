@@ -27,7 +27,6 @@ body {
     font-size: 30px;
     color: white;
     letter-spacing: 2.5px;
-
 }
 
 #name-card-front {
@@ -38,7 +37,6 @@ body {
     font-size: 16px;
     color: white;
     letter-spacing: 3px;
-
 }
 
 #exp-card-front {
@@ -48,7 +46,6 @@ body {
     font-size: 16px;
     color: white;
     letter-spacing: 3px;
-
 }
 
 #img-card-back {
@@ -64,7 +61,6 @@ body {
     font-size: 16px;
     color: white;
     letter-spacing: 3px;
-
 }
 
 form {
@@ -83,7 +79,6 @@ form label {
     letter-spacing: 3px;
     color: hsl(278, 68%, 11%);
     padding: 10px;
-
 }
 
 form input {
@@ -94,6 +89,8 @@ form input {
     border: 2px;
     border-style:solid;
     border-color: hsl(270, 3%, 87%);
+    outline-color: hsl(278, 94%, 30%);
+    color: hsl(278, 68%, 11%);
 }
 
 form input::placeholder {
@@ -141,8 +138,9 @@ form input::placeholder {
     color: white;
     border: none;
     margin: 20px 10px;
-    padding: 18px 146px 18px 146px;
+    padding: 18px 137px;
     letter-spacing: 1px;
     font-size: 16px;
-
 }
+
+/* active-states */
