@@ -2,10 +2,16 @@
 body {
     width:  1440px;
     background-color: white;
-    background-image: url(./images/bg-main-desktop.png);
-    background-repeat: no-repeat;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
+}
+
+#background-desktop {
+    display: block;
+}
+
+#background-mobile {
+    display: none;
 }
 
 #img-card-front {
@@ -173,4 +179,95 @@ form input::placeholder {
     font-size: 20px;
     padding: 20px 75px 28px;
     color: hsl(279, 6%, 55%);
+}
+
+/* mobile-desing */
+@media screen and (max-width: 420px) {
+
+    #background-desktop {
+        display: none;
+    }
+    
+    #background-mobile {
+        display: block;
+        width: 375px;
+    }
+
+    #img-card-front {
+        top: 11em;
+        left: 2em;
+        width: 250px;
+    }
+
+    #img-card-logo {
+        top: 12.5em;
+        left: 3.5em;
+        width: 4.5em;
+    }
+
+    #num-card-front {
+        top: 14.5em;
+        left: 2.5em;
+        font-size: 16px;
+    }
+
+    #name-card-front {
+        top: 26em;
+        left: 4em;
+        font-size: 10px;
+    }
+
+    #exp-card-front {
+        top: 26em;
+        left: 22.5em;
+        font-size: 10px;
+    }
+
+    #img-card-back {
+        top: 3em;
+        left: 6em;
+        width: 250px;
+    }
+
+    #cvv-card-back {
+        top: 9.3em;
+        left: 24.5em;
+        font-size: 11px;
+    }
+
+    form {
+        top: 20em;
+        left: 2em;
+    }
+
+    #input-name, #input-num {
+        width: 20em;
+    }
+
+    #label-cvv {
+        margin-left: 0px;
+    }
+
+    #input-mm, #input-aa {
+        width: 4em;
+    }
+
+    #input-cvv {
+        width: 90px;
+    }
+
+    #confirm, #continue {
+        padding: 18px 103px;
+    }
+
+    #complete {
+        top: 18em;
+        left: 0em;
+    }
+
+    #continue {
+        margin-left: 2.9em;
+    }
+
+
 }

@@ -37,10 +37,10 @@ Users should be able to:
 ## My process
 
 - [x] Desktop-design
-- [50%] Active-states
 - [x] Complete-state desktop
-- [ ] Mobile-design
-- [ ] Complete-state mobile
+- [x] Mobile-design
+- [x] Complete-state mobile
+- [50%] Active-states
 - [ ] Interactive
 
 ## What I learned

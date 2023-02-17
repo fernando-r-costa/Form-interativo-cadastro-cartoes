@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="./style/reset.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -12,14 +12,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style/style.css">
 
   <title>Formulário Interativo Cadastro</title>
   
 </head>
 
 <body>
+  <div>
+    <input type="image" id="background-desktop" src="./images/bg-main-desktop.png">
+    <input type="image" id="background-mobile" src="./images/bg-main-mobile.png">
+  </div>
   <div class="card">
+    <div class="card-back">
+      <input type="image" id="img-card-back" src="./images/bg-card-back.png">
+      <p id="cvv-card-back">000</p>  
+    </div>
+    
     <div class="card-front">
       <input type="image" id="img-card-front" src="./images/bg-card-front.png">
       <input type="image" id="img-card-logo" src="./images/card-logo.svg">
@@ -28,10 +37,6 @@
       <p id="exp-card-front">00/00</p>  
     </div>
 
-    <div class="card-back">
-      <input type="image" id="img-card-back" src="./images/bg-card-back.png">
-      <p id="cvv-card-back">000</p>  
-    </div>
   </div>
 
   <fieldset id="form" >
