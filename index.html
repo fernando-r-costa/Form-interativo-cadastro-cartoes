@@ -42,7 +42,9 @@
   <fieldset id="form" >
     <form>
       <label>Nome do Titular</label><input type="text" id="input-name" placeholder="Jane Appleseed">
+      <p class="info-error" id="error-name" hidden></p>
       <label>Número do cartão</label><input type="text" id="input-num" placeholder="1234 5678 9123 0000">
+      <p class="info-error" id="error-num" hidden></p>
       <div class="menor">
         <label for="input-mm" class="label-menor" id="label-exp">Data Exp. (mm/aa)</label>
         <label for="input-cvv" class="label-menor" id="label-cvv">CVV</label>
@@ -51,14 +53,16 @@
         <input type="text" id="input-mm" placeholder="MM">
         <input type="text" id="input-aa" placeholder="AA">
         <input type="text" id="input-cvv" placeholder="123">
+        <p class="info-error" id="error-exp" hidden></p>
+        <p class="info-error" id="error-cvv" hidden></p>
       </div>
       <div class="submit">
-        <input type="submit" id="confirm" value="Confirmar">
+        <input type="button" id="confirm" value="Confirmar">
       </div>  
     </form>
   </fieldset>
 
-  <fieldset id="complete">
+  <div id="complete">
     <div class="image-complete">
       <input type="image" id="image-complete" src="./images/icon-complete.svg">
     </div>
@@ -67,10 +71,12 @@
       <p>O cartão foi adicionado</p>
     </div>
     <div class="submit">
-      <input type="submit" id="continue" value="Continuar">
+      <input type="button" id="continue" value="Continuar">
     </div>      
-  </fieldset>
-    
+  </div>
+  
+  <script src="./script/main.js"></script>
+
 </body>
 
 <footer>

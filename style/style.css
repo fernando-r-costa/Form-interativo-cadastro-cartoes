@@ -70,7 +70,6 @@ body {
 }
 
 form {
-    content-visibility: visible;
     display: block;
     width: 25em;
     position:absolute ;
@@ -140,6 +139,7 @@ form input::placeholder {
     width: 130px;
 }
 
+
 #confirm, #continue {
     background-color: hsl(278, 68%, 11%);
     color: white;
@@ -150,13 +150,24 @@ form input::placeholder {
     padding: 18px 137px;
     letter-spacing: 1px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 /* active-states */
+.info-error {
+    margin: -10px 0px 5px 15px;
+    font-size: 14px;
+    color: hsl(0, 100%, 66%);
+}
+
+#error-cvv {
+    position:absolute ;
+    top: 270px;
+    left: 205px;    
+}
 
 /* complete-states */
 #complete {
-    content-visibility: hidden;
     display: block;
     width: 25em;
     position:absolute ;
@@ -182,8 +193,8 @@ form input::placeholder {
 }
 
 /* mobile-desing */
-@media screen and (max-width: 420px) {
 
+@media screen and (max-width: 420px) {
     #background-desktop {
         display: none;
     }
@@ -256,6 +267,10 @@ form input::placeholder {
         width: 90px;
     }
 
+    #error-cvv {
+        left: 12.6em;    
+    }
+
     #confirm, #continue {
         padding: 18px 103px;
     }
@@ -268,6 +283,4 @@ form input::placeholder {
     #continue {
         margin-left: 2.9em;
     }
-
-
 }

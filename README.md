@@ -41,7 +41,7 @@ Users should be able to:
 - [x] Mobile-design
 - [x] Complete-state mobile
 - [50%] Active-states
-- [ ] Interactive
+- [50%] Interactive
 
 ## What I learned
 
