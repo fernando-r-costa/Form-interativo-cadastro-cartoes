@@ -16,6 +16,8 @@ let erroNum = document.getElementById("error-num");
 let erroExp = document.getElementById("error-exp");
 let erroCvv = document.getElementById("error-cvv");
 
+complete.style.visibility = "hidden";
+
 function verifica() {
     if (nameCard.value == '') {
         erroName.innerText = "Campo obrigatório";
@@ -181,8 +183,18 @@ function verifica() {
         mmExp.style.outline = "";
         aaExp.style.outline = "";
         cvv.style.outline = "";
-        
+        painelNumCard.innerText = `${numCard.value}`;
+        painelName.innerText = `${nameCard.value}`;
+        painelExp.innerText = `${mmExp.value}/${aaExp.value}`;
+        painelCvv.innerText = `${cvv.value}`;
+        form.style.visibility = "hidden";
+        complete.style.visibility = "visible";
     }
 }
 
+function reinicio() {
+    window.location.reload();
+}
+
 confirmar.onclick = verifica;
+continuar.onclick = reinicio;

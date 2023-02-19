@@ -9,7 +9,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-- [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -27,8 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./screenshot.jpg)
-
+![Desktop-design](./screenshot/screenshot.jpg)
+![Active-states](./screenshot/screenshot2.jpg)
+![Complete-states](./screenshot/screenshot3.jpg)
+![Mobile-design](./screenshot/screenshot4.jpg)
 
 ### Links
 
@@ -40,11 +41,8 @@ Users should be able to:
 - [x] Complete-state desktop
 - [x] Mobile-design
 - [x] Complete-state mobile
-- [50%] Active-states
-- [50%] Interactive
-
-## What I learned
-
+- [x] Active-states
+- [x] Interactive
 
 ## Author
 
