@@ -3,7 +3,7 @@
 
 ## Índice
 
-- [Visão Geral](#visao-geral)
+- [Visão Geral](#visão-geral)
   - [O Desafio](#o-desafio)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -36,7 +36,7 @@ Os usuários deverão ter a capacidade de:
 - Site URL: [form-interativo-cadastro](https://form-interativo-cadastro.vercel.app/)
 
 
-## My process
+## Meu processo
 
 - [x] Desktop-design
 - [x] Estado-completo desktop
