@@ -1,28 +1,28 @@
-# Frontend Mentor - Interactive card details form solution
+# Solução de formulário de cadastro de cartões interativo.
 
-This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
+## Índice
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
+- [Visão Geral](#visao-geral)
+  - [O Desafio](#o-desafio)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-- [Author](#author)
+- [Meu processo](#meu-processo)
+- [Autor](#autor)
 
-## Overview
 
-### The challenge
+## Visão Geral
 
-Users should be able to:
+### O Desafio
 
-- Fill in the form and see the card details update in real-time
-- Receive error messages when the form is submitted if:
-  - Any input field is empty
-  - The card number, expiry date, or CVC fields are in the wrong format
-- View the optimal layout depending on their device's screen size
-- See hover, active, and focus states for interactive elements on the page
+Os usuários deverão ter a capacidade de:
+
+- Preencher o formulário e ver a atualização dos dados do cartão em tempo real;
+- Receber mensagens de erro quando o formulário for enviado se:
+   - Qualquer campo de entrada está vazio;
+   - O número do cartão, data de validade ou campos CVC estão no formato errado;
+- Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo;
+- Ver os estados de foco para todos os elementos interativos na página.
 
 ### Screenshot
 
@@ -33,17 +33,19 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [form-interativo-cadastro](https://form-interativo-cadastro.vercel.app/)
+- Site URL: [form-interativo-cadastro](https://form-interativo-cadastro.vercel.app/)
+
 
 ## My process
 
 - [x] Desktop-design
-- [x] Complete-state desktop
+- [x] Estado-completo desktop
 - [x] Mobile-design
-- [x] Complete-state mobile
-- [x] Active-states
-- [x] Interactive
+- [x] Estado-completo mobile
+- [x] Estados ativos
+- [x] Interação
 
-## Author
+
+## Autor
 
 - LinkedIn - [Fernando R Costa](https://www.linkedin.com/in/fernando-r-costa/)
