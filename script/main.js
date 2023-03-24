@@ -18,161 +18,109 @@ let erroCvv = document.getElementById("error-cvv");
 
 complete.style.visibility = "hidden";
 
+function contorna_esconde_name_card() {
+    nameCard.style.outline = "1px solid hsl(0, 100%, 66%)";
+    numCard.style.outline = "";
+    mmExp.style.outline = "";
+    aaExp.style.outline = "";
+    cvv.style.outline = "";
+    erroName.hidden = false;
+    erroNum.hidden = true;
+    erroExp.hidden = true;
+    erroCvv.hidden = true;
+}
+
+function contorna_esconde_num_card() {
+    numCard.style.outline = "1px solid hsl(0, 100%, 66%)";
+    nameCard.style.outline = "";
+    mmExp.style.outline = "";
+    aaExp.style.outline = "";
+    cvv.style.outline = "";
+    erroNum.hidden = false;
+    erroName.hidden = true;
+    erroExp.hidden = true;
+    erroCvv.hidden = true;
+}
+
+function contorna_esconde_mm_exp() {
+    mmExp.style.outline = "1px solid hsl(0, 100%, 66%)";
+    nameCard.style.outline = "";
+    numCard.style.outline = "";
+    aaExp.style.outline = "";
+    cvv.style.outline = "";
+    erroExp.hidden = false;
+    erroName.hidden = true;
+    erroNum.hidden = true;
+    erroCvv.hidden = true;
+}
+
+function contorna_esconde_aa_exp() {
+    aaExp.style.outline = "1px solid hsl(0, 100%, 66%)";
+    nameCard.style.outline = "";
+    numCard.style.outline = "";
+    mmExp.style.outline = "";
+    cvv.style.outline = "";
+    erroExp.hidden = false;
+    erroName.hidden = true;
+    erroNum.hidden = true;
+    erroCvv.hidden = true;
+}
+
+function contorna_esconde_cvv() {
+    cvv.style.outline = "1px solid hsl(0, 100%, 66%)";
+    nameCard.style.outline = "";
+    numCard.style.outline = "";
+    mmExp.style.outline = "";
+    aaExp.style.outline = "";
+    erroCvv.hidden = false;
+    erroName.hidden = true;
+    erroNum.hidden = true;
+    erroExp.hidden = true;
+}
+
 function verifica() {
     if (nameCard.value == '') {
         erroName.innerText = "Campo obrigatório";
-        nameCard.style.outline = "1px solid hsl(0, 100%, 66%)";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroName.hidden = false;
-        erroNum.hidden = true;
-        erroExp.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_name_card()
     } else if (nameCard.value.length <=2) {
         erroName.innerText = "Nome pequeno";
-        nameCard.style.outline = "1px solid hsl(0, 100%, 66%)";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroName.hidden = false;
-        erroNum.hidden = true;
-        erroExp.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_name_card()
     } else if (numCard.value == '') {
         erroNum.innerText = "Campo obrigatório";
-        numCard.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroNum.hidden = false;
-        erroName.hidden = true;
-        erroExp.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_num_card()
     } else if (isNaN(numCard.value)) {
         erroNum.innerText = "Obrigatório só números";
-        numCard.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroNum.hidden = false;
-        erroName.hidden = true;
-        erroExp.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_num_card()
     } else if (numCard.value.length != 16) {
         erroNum.innerText = "Verificar número";
-        numCard.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroNum.hidden = false;
-        erroName.hidden = true;
-        erroExp.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_num_card()
     } else if (mmExp.value == '') {
         erroExp.innerText = "Campo obrigatório";
-        mmExp.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroExp.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_mm_exp()
     } else if (isNaN(mmExp.value)) {
         erroExp.innerText = "Obrigatório só números";
-        mmExp.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroExp.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_mm_exp()
     } else if (mmExp.value.length != 2) {
         erroExp.innerText = "Verificar número";
-        mmExp.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        aaExp.style.outline = "";
-        cvv.style.outline = "";
-        erroExp.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_mm_exp()
     } else if (aaExp.value == '') {
         erroExp.innerText = "Campo obrigatório";
-        aaExp.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        cvv.style.outline = "";
-        erroExp.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_aa_exp()
     } else if (isNaN(aaExp.value)) {
         erroExp.innerText = "Obrigatório só números";
-        aaExp.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        cvv.style.outline = "";
-        erroExp.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_aa_exp()
     } else if (aaExp.value.length != 2) {
         erroExp.innerText = "Verificar número";
-        aaExp.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        cvv.style.outline = "";
-        erroExp.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroCvv.hidden = true;
+        contorna_esconde_aa_exp()
     } else if (cvv.value == '') {
         erroCvv.innerText = "Campo obrigatório";
-        cvv.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        erroCvv.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroExp.hidden = true;
+        contorna_esconde_cvv()
     } else if (isNaN(cvv.value)) {
         erroCvv.innerText = "Obrigatório só números";
-        cvv.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        erroCvv.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroExp.hidden = true;
+        contorna_esconde_cvv()
     } else if (cvv.value.length != 3) {
         erroCvv.innerText = "Verificar número";
-        cvv.style.outline = "1px solid hsl(0, 100%, 66%)";
-        nameCard.style.outline = "";
-        numCard.style.outline = "";
-        mmExp.style.outline = "";
-        aaExp.style.outline = "";
-        erroCvv.hidden = false;
-        erroName.hidden = true;
-        erroNum.hidden = true;
-        erroExp.hidden = true;
+        contorna_esconde_cvv()
     } else {
         erroName.hidden = true;
         erroNum.hidden = true;
